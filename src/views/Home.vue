@@ -1,18 +1,43 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <div id="links">
+      <ul id="links-list">
+        <li v-for="link in externalLinks"
+            :key="link.name"
+            >
+            <a :href="link.link">{{link.name}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 
-@Component({
-  components: {
-    HelloWorld
-  }
-})
-export default class Home extends Vue {}
+interface ExternalLink {
+  name: string;
+  link: string;
+}
+
+@Component
+export default class About extends Vue {
+  public externalLinks: ExternalLink[] = [
+    {
+      name: 'github',
+      link: 'https://github.com/mikalcallahan'
+    },
+    {
+      name: 'email',
+      link: 'mailto:mikal.callahan@icloud.com'
+    },
+    {
+      name: 'webring',
+      link: 'https://webring.xxiivv.com'
+    }
+  ]
+}
 </script>
+
+<style src="./Home.styl" lang="stylus">
+</style>
