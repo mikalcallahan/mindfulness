@@ -14,6 +14,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import '../threejs/cube'
 
 interface ExternalLink {
   name: string;
