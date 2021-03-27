@@ -30,7 +30,7 @@ export default class About extends Vue {
       link: 'http://mindfulstreaming.now.sh'
     },
     {
-      name: 'Vuejs boilerplate',
+      name: 'VueBoilerplate',
       link: 'https://github.com/mikalcallahan/vuejs-boilerplate'
     },
     {

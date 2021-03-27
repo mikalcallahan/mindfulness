@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <div id="introduction">
+      <span>
+        Mikal Callahan is a software engineer and UI/UX designer in love with the process of designing and developing user experiences. I create full-stack solutions to web oriented needs.
+      </span>
     <div id="links">
       <ul id="links-list">
         <li v-for="link in externalLinks"
@@ -8,6 +12,7 @@
             <a :href="link.link">{{link.name}}</a>
         </li>
       </ul>
+    </div>
     </div>
   </div>
 </template>

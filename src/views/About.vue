@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="introduction">
-      <p>Mikal Callahan is a software developer and UI/UX designer in mlove with the process of designing and developing user experiences. I create full-stack solutions to web oriented needs.</p>
+      <p>Mikal Callahan is a software developer and UI/UX designer in love with the process of designing and developing user experiences. I create full-stack solutions to web oriented needs.</p>
     </div>
 
     <div class="works">
