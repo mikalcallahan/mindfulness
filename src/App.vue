@@ -1,7 +1,9 @@
 <template>
   <div id="app">
   <Navbar/>
+  <transition name="fade" mode="out-in">
     <router-view/>
+  </transition>
   </div>
 </template>
 
@@ -15,5 +17,5 @@ export default Vue.extend({
 })
 </script>
 
-<style src="./styles.styl" lang="stylus">
-</style>
+<style src="./styles.styl" lang="stylus"></style>
+<style src="./styles/transitions.styl" lang="stylus"></style>
